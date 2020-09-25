@@ -19,36 +19,36 @@ function love.load()
 
     -- Sprite Stuff
 
-	-- -- Create a Custom Layer
-	-- map:addCustomLayer("Sprite Layer", 3)
+	-- Create a Custom Layer
+	map:addCustomLayer("Sprite Layer", 3)
 
-	-- -- Add data to Custom Layer
-	-- local spriteLayer = map.layers["Sprite Layer"]
-	-- spriteLayer.sprites = {
-	-- 	player = {
-	-- 		image = love.graphics.newImage("assets/sprites/player.png"),
-	-- 		x = 64,
-	-- 		y = 64,
-	-- 		r = 0,
-	-- 	}
-	-- }
+	-- Add data to Custom Layer
+	local spriteLayer = map.layers["Sprite Layer"]
+	spriteLayer.sprites = {
+		player = {
+			image = love.graphics.newImage("assets/sprites/player.png"),
+			x = 64,
+			y = 64,
+			r = 0,
+		}
+	}
 
-	-- -- Update callback for Custom Layer
-	-- function spriteLayer:update(dt)
-	-- 	for _, sprite in pairs(self.sprites) do
-	-- 		sprite.r = sprite.r + math.rad(90 * dt)
-	-- 	end
-	-- end
+	-- Update callback for Custom Layer
+	function spriteLayer:update(dt)
+		for _, sprite in pairs(self.sprites) do
+			sprite.r = sprite.r + math.rad(90 * dt)
+		end
+	end
 
-	-- -- Draw callback for Custom Layer
-	-- function spriteLayer:draw()
-	-- 	for _, sprite in pairs(self.sprites) do
-	-- 		local x = math.floor(sprite.x)
-	-- 		local y = math.floor(sprite.y)
-	-- 		local r = sprite.r
-	-- 		love.graphics.draw(sprite.image, x, y, r)
-	-- 	end
-	-- end
+	-- Draw callback for Custom Layer
+	function spriteLayer:draw()
+		for _, sprite in pairs(self.sprites) do
+			local x = math.floor(sprite.x)
+			local y = math.floor(sprite.y)
+			local r = sprite.r
+			love.graphics.draw(sprite.image, x, y, r)
+		end
+	end
 end
 
 function love.update(dt)
