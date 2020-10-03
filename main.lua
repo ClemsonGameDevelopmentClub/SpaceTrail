@@ -1,3 +1,5 @@
+require ("./src/EventRandomizer")
+
 function love.load()
 	local test = 0
 end
