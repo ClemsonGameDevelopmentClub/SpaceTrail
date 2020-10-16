@@ -1,11 +1,11 @@
-function love.load()
-	local test = 0
-end
+-- function love.load()
+-- 	local test = 0
+-- end
 
-function love.update(dt)
+-- function love.update(dt)
 
-end
+-- end
 
-function love.draw()
+-- function love.draw()
 
-end
+-- end
