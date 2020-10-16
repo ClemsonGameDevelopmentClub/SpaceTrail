@@ -12,7 +12,6 @@ function love.load()
 	love.window.setMode(windowWidth, windowHeight, {resizable=false, vsync=false, minwidth=500, minheight=300})
 	
 	-- Map stuff
-	
 	-- Set world meter size (in pixels)
 	love.physics.setMeter(32)
 	-- Load a map exported to Lua from Tiled
