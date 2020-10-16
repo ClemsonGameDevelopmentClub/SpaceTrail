@@ -1,0 +1,39 @@
+{
+    "Events":[
+        {
+        "Event_Name": "Mutiny!",
+        "Event_chance": "When there is 0 moral.",
+        "Text": "From QuarterMaster AI: 'Captain, it seems the crew have had enough captain. They are attempting to breach your quarters now. I recommend you evacuate the ship or face most certain... <Captain quarters door is breached>... backlash'.",
+        "Option1": ["Give Up", "The crew launch you into space. You implode instantly. Game Over."],
+        "Option2":  ["Fight your way out", "You give a good fight for being hopelessly outnumbered. Game Over."],
+        "Option3": ["Play dead", "They assumed you died and launch you into space. You implode instantly. Game Over."]
+        },
+
+        {
+        "Event_Name": "Floating reckage",
+        "Event_chance": "Common",
+        "Text": "From QuarterMaster AI: 'Captain, we have seemed to stumble across a piece of reckage from our own home world. The material on board will aid us in our journey.'",
+        "Option1": ["Salvage it!", "Either positive moral, ship-integrety, or nurishment"],
+        "Option2":  ["Let it go...", "Lose moral..."],
+        "Option3": ["Destroy it!!!", "Lose moral"]
+        },
+
+        {
+            "Event_Name": "Strange reckage",
+            "Event_chance": "Uncommon",
+            "Text": "From QuarterMaster AI: 'Captain, we have seemed to stumble across a piece of reckage from our own home world. But it seems that when some of the crew returned from salvage, a parasitic organism also accompanied them. It has proven hostile and what should we do?'",
+            "Option1": ["Eliminate it!", "Gain moral, lose ship-integrety"],
+            "Option2":  ["Let it be.", "Lose major moral."],
+            "Option3": ["Capture it for Science!", "Negative moral!"]
+        },
+
+        {
+            "Event_Name": "Hostile attack!!!",
+            "Event_chance": "Common",
+            "Text": "From QuarterMaster AI: 'Captain, we have engaged a hostile force trying to invade the ship. What is our next course of action?'",
+            "Option1": ["Counter attack!!!", "Gain nurishment and moral, but lose major ship-integrety"],
+            "Option2":  ["Escape!!!", "Lose moral"],
+            "Option3": ["Negotiate.", "Lose nurishment and moral"]
+        }
+    ]
+}

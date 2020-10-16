@@ -1,11 +1,11 @@
 -- function love.load()
 -- 	local test = 0
 -- end
-require ("./src/EventRandomizer")
+-- require ("./src/EventRandomizer")
 
-function love.load()
-	local test = 0
-end
+-- function love.load()
+-- 	local test = 0
+-- end
 
 -- function love.update(dt)
 
