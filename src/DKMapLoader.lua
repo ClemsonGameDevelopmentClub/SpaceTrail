@@ -29,7 +29,7 @@ function love.load()
 	
 	-- Map Layer and Player stuff
 	-- Create a Custom Layer, 2 is the second layer on map
-	map:addCustomLayer("Sprite Layer", 2)
+	map:addCustomLayer("Sprite Layer", 3)
 	-- Add data to Custom Layer
 	local spriteLayer = map.layers["Sprite Layer"]
 
@@ -68,14 +68,14 @@ function love.load()
 					if spriteLayer.sprites.player.y < y then 
 
 						spriteLayer.sprites.player.y = spriteLayer.sprites.player.y + blockwidth
-						-- sprite.r = 33
+                        -- sprite.r = 33
 					end
 
 					-- Left
 					if spriteLayer.sprites.player.x > x then 
 
 						spriteLayer.sprites.player.x = spriteLayer.sprites.player.x - blockwidth
-						-- sprite.r = -66
+                        -- sprite.r = -66
 					end
 
 					-- Up
@@ -84,6 +84,9 @@ function love.load()
 						spriteLayer.sprites.player.y = spriteLayer.sprites.player.y - blockwidth
 						-- sprite.r = -33
 					end
+
+					-- Add Random Event!!!
+
 				end
 			end
 		end
